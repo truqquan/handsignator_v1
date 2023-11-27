@@ -1,4 +1,6 @@
-# handsignator_v2
+# handsignator_v2  
+# Thiết bị hỗ trợ người khuyết tật nghe và nói
 Dự án tham gia KHKT cấp trường 2023  
-Trường Trung học Phổ Thông Thị xã Quảng Trị
-Cao Trung Quân 11A1
+Cao Trung Quân 11A1 Trường THPT Thị xã Quảng Trị   
+  
+
