@@ -13,15 +13,15 @@ while True:
 
     # Set the language to Vietnamese
     with mic as source:
-        r.adjust_for_ambient_noise(source)
-#        print("Say something...")
-        audio = r.listen(source)
-
-    try:
-        # Recognize speech using the Vietnamese language
-        text = r.recognize_google(audio, language='vi-VN')
-        print(text,end=' ')
-    except sr.UnknownValueError:
-        print(".")
-    except sr.RequestError as e:
-        print("Error occurred:", str(e))
+#        print(audio)
+        try:
+            # Recognize speech using the Vietnamese language
+            r.adjust_for_ambient_noise(source)
+    #        print("Say something...")
+            audio = r.listen(source)
+            text = r.recognize_google(audio, language='vi-VN') 
+            print(text,end=' ')
+        except sr.UnknownValueError:
+            print('.',end=' ')
+        except sr.RequestError as e:
+            print("Error occurred:", str(e))
